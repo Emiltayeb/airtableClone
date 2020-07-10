@@ -3,6 +3,7 @@ const menu = document.querySelector(".menu");
 const navLinks = document.querySelector(".nav-links");
 const introItems = document.querySelectorAll(".task-text-items .item");
 
+let timoutTime = 7500;
 introItems.forEach((item) => {
 	item.addEventListener("click", function (e) {
 		// each click on item
@@ -14,6 +15,8 @@ introItems.forEach((item) => {
 				item.classList.remove("activeItem");
 			}
 		});
+
+		// if the users click on the div we want to give more time to the setTimeOut
 
 		// changing the class
 		item.classList.add("activeItem");
@@ -50,10 +53,8 @@ introItems.forEach((item) => {
 			document.querySelectorAll(".images img")[1].style.display = "block";
 		}
 
-		console.log("******* start*****");
 		introItems.forEach((item) => {
 			if (!item.classList.contains("activeItem")) {
-				console.log(item);
 				item.style.backgroundColor = "transparent";
 			}
 		});
@@ -62,23 +63,28 @@ introItems.forEach((item) => {
 
 // eventListners
 menu.addEventListener("click", function (e) {
+	const closeBtn = menu.querySelector("a");
+	closeBtn.textContent = "X";
+	closeBtn.classList.add("closeMenu");
 	if (!navLinks.classList.contains("active")) {
-		menu.querySelector("a").textContent = "X";
 		menu.style.zIndex = "2";
 		document.querySelector(".logo").style.pointerEvents = "none";
 		navLinks.classList.add("active");
 		navLinks.style.opacity = "1";
+
 		gsap.to(menu.querySelector("a"), 0.5, {
 			color: "white",
 			borderColor: "white",
 		});
 		document.body.style.overflowY = "hidden";
 		gsap.fromTo(navLinks, 1, { translateX: "100%" }, { translateX: "0%" });
-		navLinks.style.pointerEvenets = "all";
+		navLinks.style.pointerEvents = "all";
 	} else {
+		closeBtn.classList.remove("closeMenu");
 		document.querySelector(".logo").style.pointerEvents = "All";
 		navLinks.classList.remove("active");
 		document.body.style.overflowY = "scroll";
+		closeBtn.textContent = "";
 		gsap.to(navLinks, 1, { translateX: "100%", onComplete: myfunc });
 		navLinks.style.pointerEvenets = "none";
 	}
@@ -96,11 +102,11 @@ function myfunc() {
 
 // setInterval to change to backgrounds
 
-setInterval(function () {
+setTimeout(function () {
 	//preform a click event on the next tdiv
 
 	// get the currentDiv
-
+	console.log(timoutTime);
 	let nextIndex;
 	let items = Array.from(introItems);
 
@@ -117,4 +123,4 @@ setInterval(function () {
 
 	const nextItem = items[nextIndex];
 	nextItem.click();
-}, 4000);
+}, timoutTime);

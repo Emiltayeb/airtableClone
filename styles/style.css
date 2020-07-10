@@ -107,6 +107,10 @@ input[type="email"]::placeholder {
   background-color: #043989;
 }
 
+.closeMenu:hover {
+  color: black !important;
+}
+
 body {
   font-family: "Assistant", sans-serif;
   line-height: 1.25;
@@ -223,6 +227,10 @@ a.link-secondary:hover {
   font-weight: 700;
 }
 
+#navbar ul a li:hover {
+  color: black;
+}
+
 .intro {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -310,6 +318,7 @@ a.link-secondary:hover {
 .tasks .task .images img:first-child {
   height: 520px;
   width: 850px;
+  border-radius: 0.5rem;
 }
 
 .tasks .task .images img:last-child {
@@ -930,7 +939,6 @@ footer .footer-links-container .bottom {
             flex-direction: row;
   }
   .tasks .task .images img:first-child {
-    width: 80%;
     height: 300px;
   }
   .tasks .task-text h2 {
@@ -981,5 +989,9 @@ footer .footer-links-container .bottom {
   .power-form input[type="email"] {
     width: 50%;
   }
+}
+
+.closeMenu:hover {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */

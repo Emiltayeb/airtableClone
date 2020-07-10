@@ -83,9 +83,13 @@ a.link-secondary {
 		transform: translateX(0);
 		a {
 			padding: 1rem;
+
 			li {
 				font-size: 1rem;
 				font-weight: 700;
+				&:hover {
+					color: black;
+				}
 			}
 		}
 	}
@@ -147,6 +151,7 @@ a.link-secondary {
 			img:first-child {
 				height: 520px;
 				width: 850px;
+				border-radius: 0.5rem;
 			}
 			img:last-child {
 				height: 400px;
@@ -358,3 +363,6 @@ footer {
 	}
 }
 @import "quiers";
+.closeMenu:hover {
+	color: black;
+}
