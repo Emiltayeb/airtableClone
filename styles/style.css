@@ -443,19 +443,19 @@ a.link-secondary:hover {
 }
 
 .inspration-cards .card .creative_teams {
-  background-image: url("/images/team.jpg");
+  background-image: url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
 }
 
 .inspration-cards .card .marketing {
-  background-image: url("/images/marketing.jpg");
+  background-image: url("https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
 }
 
 .inspration-cards .card .products {
-  background-image: url("/images/product.jpg");
+  background-image: url("https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
 }
 
 .inspration-cards .card .projects {
-  background-image: url("/images/project.jpg");
+  background-image: url("https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80");
 }
 
 .inspration-cards .card p {
