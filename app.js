@@ -102,7 +102,7 @@ function myfunc() {
 
 // setInterval to change to backgrounds
 
-setTimeout(function () {
+setInterval(function () {
 	//preform a click event on the next tdiv
 
 	// get the currentDiv
