@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700;800&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+// fontsize
+$Header-xs: 2rem;
+$Header-s: 2.5rem;
+$header-m: 1.85rem;
+$header-b: 3.5rem;
+
+$text-s: 1.2rem;
+$text-m: 2rem;
+
+// colors
+$headingColor: #333333;
+$blueColor: #2d7ffa;
+$activeColor: #2d7ff9;
+$greyText: #949494;
+
+// images
+
+$creative_teamsImg: url(/images/team.jpg);
+$marketingImg: url(/images/marketing.jpg);
+$productsImg: url(/images/product.jpg);
+$projectsImg: url(/images/project.jpg);
+h1 {
+	font-size: $header-b;
+}
+
+h2 {
+	font-size: $header-m;
+}
+
+h3 {
+	font-size: $Header-s;
+}
+h4 {
+	font-size: $Header-s;
+}
+
+h1,
+h2,
+h3.h4,
+h5 {
+	color: $headingColor;
+}
+p,
+a,
+li,
+button,
+label,
+input {
+	font-size: $text-s;
+}
+li {
+	color: $greyText;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+}
+
+ul {
+	list-style: none;
+}
+
+input[type="email"] {
+	background-color: #f2f2f2;
+	outline: none;
+	border: none;
+	padding: 0.55rem 1rem 0.55rem 1rem;
+	border-radius: 0.25rem;
+
+	&::placeholder {
+		font-weight: 550;
+		font-size: 1rem;
+	}
+}
+// hlpers
+
+.container {
+	max-width: 72rem;
+	margin: 0 auto;
+}
+.btn {
+	background: none;
+	border: none;
+	outline: none;
+	padding: 0.55rem;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+	cursor: pointer;
+	font-weight: 600;
+
+	&-primary {
+		background-color: $activeColor;
+		color: white;
+
+		&:hover {
+			background-color: darken($color: $activeColor, $amount: 30%);
+		}
+	}
+}
