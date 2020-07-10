@@ -17,12 +17,21 @@ introItems.forEach((item) => {
 
 		// changing the class
 		item.classList.add("activeItem");
+		item.style.backgroundColor = item.getAttribute("data-color");
 		//seeting the correct img
 		const attrImg = item.getAttribute("data-img");
 
 		const currentImg = document.querySelector(".images img");
 		currentImg.src = `images/${attrImg}`;
 		currentImg.style.animation = "";
+
+		// chage the background main img
+
+		const attrBgimage = item.getAttribute("data-backgorund");
+
+		document.querySelector(
+			".tasks"
+		).style.backgroundImage = `url("images/${attrBgimage}")`;
 
 		if (!document.querySelector(".images").style.animation) {
 			document.querySelector(".images").style.animation =
@@ -40,6 +49,14 @@ introItems.forEach((item) => {
 		} else {
 			document.querySelectorAll(".images img")[1].style.display = "block";
 		}
+
+		console.log("******* start*****");
+		introItems.forEach((item) => {
+			if (!item.classList.contains("activeItem")) {
+				console.log(item);
+				item.style.backgroundColor = "transparent";
+			}
+		});
 	});
 });
 
@@ -76,3 +93,28 @@ function myfunc() {
 	});
 	navLinks.style = "";
 }
+
+// setInterval to change to backgrounds
+
+setInterval(function () {
+	//preform a click event on the next tdiv
+
+	// get the currentDiv
+
+	let nextIndex;
+	let items = Array.from(introItems);
+
+	for (i in items) {
+		if (items[i].classList.contains("activeItem")) {
+			i = parseInt(i);
+			nextIndex = i + 1;
+
+			if (nextIndex >= items.length) {
+				nextIndex = 0;
+			}
+		}
+	}
+
+	const nextItem = items[nextIndex];
+	nextItem.click();
+}, 4000);
