@@ -21,7 +21,7 @@ introItems.forEach((item) => {
 		const attrImg = item.getAttribute("data-img");
 
 		const currentImg = document.querySelector(".images img");
-		currentImg.src = `/images/${attrImg}`;
+		currentImg.src = `images/${attrImg}`;
 		currentImg.style.animation = "";
 
 		if (!document.querySelector(".images").style.animation) {

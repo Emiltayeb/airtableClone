@@ -23,10 +23,10 @@ $greyText: #949494;
 
 // images
 
-$creative_teamsImg: url(images/team.jpg);
-$marketingImg: url(images/marketing.jpg);
-$productsImg: url(images/product.jpg);
-$projectsImg: url(images/project.jpg);
+$creative_teamsImg: url("/images/team.jpg");
+$marketingImg: url("/images/marketing.jpg");
+$productsImg: url("/images/product.jpg");
+$projectsImg: url("/images/project.jpg");
 
 h1 {
 	font-size: $header-b;
