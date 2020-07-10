@@ -272,7 +272,7 @@ a.link-secondary:hover {
 }
 
 .tasks {
-  background-image: url(/images/bgPink.svg);
+  background-image: url(images/bgPink.svg);
   height: 650px;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -443,19 +443,19 @@ a.link-secondary:hover {
 }
 
 .inspration-cards .card .creative_teams {
-  background-image: url(/images/team.jpg);
+  background-image: url(images/team.jpg);
 }
 
 .inspration-cards .card .marketing {
-  background-image: url(/images/marketing.jpg);
+  background-image: url(images/marketing.jpg);
 }
 
 .inspration-cards .card .products {
-  background-image: url(/images/product.jpg);
+  background-image: url(images/product.jpg);
 }
 
 .inspration-cards .card .projects {
-  background-image: url(/images/project.jpg);
+  background-image: url(images/project.jpg);
 }
 
 .inspration-cards .card p {
