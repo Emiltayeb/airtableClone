@@ -272,7 +272,7 @@ a.link-secondary:hover {
 }
 
 .tasks {
-  background-image: url(images/bgPink.svg);
+  background-image: url("../images/bgPink.svg");
   height: 650px;
   background-repeat: no-repeat;
   display: -webkit-box;
