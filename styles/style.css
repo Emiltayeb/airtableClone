@@ -833,6 +833,12 @@ footer .footer-links-container .bottom {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+  footer .footer-links .top {
+    margin-bottom: 1rem;
+  }
+  footer .footer-links .middle {
+    margin-bottom: 4rem;
+  }
   footer .footer-links .bottom {
     -webkit-box-align: start;
         -ms-flex-align: start;
