@@ -114,7 +114,6 @@ input[type="email"]::placeholder {
 body {
   font-family: "Assistant", sans-serif;
   line-height: 1.25;
-  overflow-x: hidden;
   background-color: #ffffff;
   overflow-x: hidden;
 }
@@ -989,9 +988,5 @@ footer .footer-links-container .bottom {
   .power-form input[type="email"] {
     width: 50%;
   }
-}
-
-.closeMenu:hover {
-  color: black;
 }
 /*# sourceMappingURL=style.css.map */

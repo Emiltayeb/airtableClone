@@ -63,6 +63,7 @@ introItems.forEach((item) => {
 
 // eventListners
 menu.addEventListener("click", function (e) {
+	document.body.style.overflow = "hidden";
 	const closeBtn = menu.querySelector("a");
 	closeBtn.textContent = "X";
 	closeBtn.classList.add("closeMenu");
@@ -76,7 +77,7 @@ menu.addEventListener("click", function (e) {
 			color: "white",
 			borderColor: "white",
 		});
-		document.body.style.overflowY = "hidden";
+
 		gsap.fromTo(navLinks, 1, { translateX: "100%" }, { translateX: "0%" });
 		navLinks.style.pointerEvents = "all";
 	} else {
@@ -102,25 +103,25 @@ function myfunc() {
 
 // setInterval to change to backgrounds
 
-setInterval(function () {
-	//preform a click event on the next tdiv
+// setInterval(function () {
+// 	//preform a click event on the next tdiv
 
-	// get the currentDiv
-	console.log(timoutTime);
-	let nextIndex;
-	let items = Array.from(introItems);
+// 	// get the currentDiv
+// 	console.log(timoutTime);
+// 	let nextIndex;
+// 	let items = Array.from(introItems);
 
-	for (i in items) {
-		if (items[i].classList.contains("activeItem")) {
-			i = parseInt(i);
-			nextIndex = i + 1;
+// 	for (i in items) {
+// 		if (items[i].classList.contains("activeItem")) {
+// 			i = parseInt(i);
+// 			nextIndex = i + 1;
 
-			if (nextIndex >= items.length) {
-				nextIndex = 0;
-			}
-		}
-	}
+// 			if (nextIndex >= items.length) {
+// 				nextIndex = 0;
+// 			}
+// 		}
+// 	}
 
-	const nextItem = items[nextIndex];
-	nextItem.click();
-}, timoutTime);
+// 	const nextItem = items[nextIndex];
+// 	nextItem.click();
+// }, timoutTime);

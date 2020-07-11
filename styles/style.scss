@@ -10,7 +10,7 @@
 body {
 	font-family: "Assistant", sans-serif;
 	line-height: 1.25;
-	overflow-x: hidden;
+
 	background-color: #ffffff;
 	overflow-x: hidden;
 	//  @include flex(center,center,row)
@@ -363,6 +363,3 @@ footer {
 	}
 }
 @import "quiers";
-.closeMenu:hover {
-	color: black;
-}
