@@ -734,9 +734,6 @@ footer .footer-links-container .bottom {
 }
 
 @media (max-width: 830px) {
-  #navbar .logo {
-    text-align: center;
-  }
   .intro {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
