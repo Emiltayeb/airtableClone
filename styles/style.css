@@ -887,6 +887,11 @@ footer .footer-links-container .bottom {
     opacity: 0;
     pointer-events: none;
   }
+  #navbar ul .logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
   #navbar ul a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -977,16 +982,19 @@ footer .footer-links-container .bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .power-form .btn {
+    margin-top: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
