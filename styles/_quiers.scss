@@ -1,289 +1,294 @@
 @media (max-width: 1500px) {
-	.intro {
-		padding: 2rem;
-	}
+  .intro {
+    padding: 2rem;
+  }
 
-	#navbar {
-		.logo {
-			text-align: left;
-		}
+  #navbar {
+    .logo {
+      text-align: left;
+    }
 
-		ul {
-			flex: none;
-		}
-	}
+    ul {
+      flex: none;
+    }
+  }
 
-	.tasks .task {
-		width: 90%;
-	}
+  .tasks .task {
+    width: 90%;
+  }
 }
 
 @media (max-width: 1150px) {
-	.tasks {
-		.task {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			margin: auto;
-			.images {
-				img:first-child {
-					height: 400px;
-					width: 700px;
-				}
+  .tasks {
+    .task {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      .images {
+        img:first-child {
+          height: 400px;
+          width: 700px;
+        }
 
-				img:last-child {
-					display: none !important;
-				}
-			}
+        img:last-child {
+          display: none !important;
+        }
+      }
 
-			&-text {
-				align-items: center;
-				h2 {
-					order: 2;
-				}
-				#Tour {
-					order: 3;
-				}
-				&-items {
-					@include flex(flex-start, auto, row);
-					margin-top: 1rem;
-					margin-bottom: 2.5rem;
-				}
-			}
-		}
-	}
+      &-text {
+        align-items: center;
+        h2 {
+          order: 2;
+        }
+        #Tour {
+          order: 3;
+        }
+        &-items {
+          @include flex(flex-start, auto, row);
+          margin-top: 1rem;
+          margin-bottom: 2.5rem;
+        }
+      }
+    }
+  }
 
-	.unleash {
-		grid-template-columns: 2fr 3fr;
-	}
+  .unleash {
+    grid-template-columns: 2fr 3fr;
+  }
 
-	.inspration {
-		&-cards {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			grid-template-rows: repeat(2, 1fr);
-			align-items: center;
+  .inspration {
+    &-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      align-items: center;
 
-			.card {
-				div:first-child {
-					min-height: 200px;
-				}
-			}
-		}
-	}
+      .card {
+        div:first-child {
+          min-height: 200px;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 1077px) {
-	.intro {
-		align-items: flex-start;
-		margin-top: 5rem;
-		height: 50vh;
-		img {
-			height: 50%;
-		}
-	}
+  .intro {
+    align-items: flex-start;
+    margin-top: 5rem;
+    height: 50vh;
+    img {
+      height: 50%;
+    }
+  }
 }
 
 // smartphones
 @media (max-width: 830px) {
-	#navbar .logo {
-		text-align: center;
-	}
-	.intro {
-		flex-direction: column;
-		height: auto;
-		justify-content: center;
-		align-items: center;
+  #navbar .logo {
+    text-align: center;
+  }
+  .intro {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
 
-		img {
-			height: 400px;
-		}
-	}
+    img {
+      height: 400px;
+    }
+  }
 
-	// text items
-	.tasks {
-		.task {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			margin: auto;
-			.images {
-				img:first-child {
-					height: 400px;
-					width: 100%;
-				}
+  // text items
+  .tasks {
+    .task {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      .images {
+        img:first-child {
+          height: 400px;
+          width: 100%;
+        }
 
-				img:last-child {
-					display: none !important;
-				}
-			}
+        img:last-child {
+          display: none !important;
+        }
+      }
 
-			&-text {
-				align-items: center;
-				h2 {
-					order: 2;
-				}
-				#Tour {
-					order: 3;
-				}
-				&-items {
-					@include flex(flex-start, auto, row);
-					margin-top: 1rem;
-					margin-bottom: 2.5rem;
-				}
-			}
-		}
-	}
+      &-text {
+        align-items: center;
+        h2 {
+          order: 2;
+        }
+        #Tour {
+          order: 3;
+        }
+        &-items {
+          @include flex(flex-start, auto, row);
+          margin-top: 1rem;
+          margin-bottom: 2.5rem;
+        }
+      }
+    }
+  }
 
-	.unleash {
-		display: block;
-		text-align: center;
-	}
+  .unleash {
+    display: block;
+    text-align: center;
+  }
 
-	.inspration {
-		padding: 1rem;
-		grid-template-columns: none;
+  .inspration {
+    padding: 1rem;
+    grid-template-columns: none;
 
-		&-cards {
-			order: 2;
-		}
-		&-text {
-			order: 1;
-			text-align: center;
-		}
-	}
+    &-cards {
+      order: 2;
+    }
+    &-text {
+      order: 1;
+      text-align: center;
+    }
+  }
 
-	.logos {
-		padding: 0 2rem;
-	}
+  .logos {
+    padding: 0 2rem;
+  }
 
-	footer {
-		display: block;
+  footer {
+    display: block;
 
-		.footer-links {
-			display: block;
+    .footer-links {
+      display: block;
 
-			& > div {
-				padding-top: 1rem;
-				padding-bottom: 1rem;
-			}
+      & > div {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
 
-			.top {
-				margin-bottom: 1rem;
-			}
-			.middle {
-				margin-bottom: 4rem;
-			}
-			.bottom {
-				align-items: flex-start;
-			}
-		}
-	}
+      .top {
+        margin-bottom: 1rem;
+      }
+      .middle {
+        margin-bottom: 4rem;
+      }
+      .bottom {
+        align-items: flex-start;
+      }
+    }
+  }
 }
 
+@media (min-width: 605px) {
+  body {
+    overflow: scroll !important;
+  }
+}
 @media (max-width: 605px) {
-	.intro-text p {
-		font-size: 1rem;
-	}
-	.intro-form input[type="email"] {
-		width: 50%;
-	}
-	#navbar {
-		padding: 0 1rem;
-		ul {
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			width: 100%;
-			position: absolute;
-			top: 0;
-			height: 100vh;
-			right: 0;
-			z-index: 1;
-			opacity: 0;
-			pointer-events: none;
-			a {
-				@include flex(center, center, row);
-				width: 100%;
-				height: 50%;
-				text-align: center;
+  .intro-text p {
+    font-size: 1rem;
+  }
+  .intro-form input[type="email"] {
+    width: 50%;
+  }
+  #navbar {
+    padding: 0 1rem;
+    ul {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      height: 100vh;
+      right: 0;
+      z-index: 1;
+      opacity: 0;
+      pointer-events: none;
+      a {
+        @include flex(center, center, row);
+        width: 100%;
+        height: 50%;
+        text-align: center;
 
-				li {
-					color: white;
-					border-bottom: 1px solid white;
-				}
+        li {
+          color: white;
+          border-bottom: 1px solid white;
+        }
 
-				&:nth-child(even) {
-					background-color: #fcb400;
-				}
+        &:nth-child(even) {
+          background-color: #fcb400;
+        }
 
-				&:nth-child(odd) {
-					background-color: #2d7ff9;
-				}
-			}
-		}
-	}
-	.menu {
-		display: block;
-		margin-left: 2rem;
-	}
+        &:nth-child(odd) {
+          background-color: #2d7ff9;
+        }
+      }
+    }
+  }
+  .menu {
+    display: block;
+    margin-left: 2rem;
+  }
 
-	.intro {
-		img {
-			display: none;
-		}
+  .intro {
+    img {
+      display: none;
+    }
 
-		&-text {
-			h1 {
-				font-size: 10.3vw;
-			}
-		}
-	}
-	.tasks {
-		.task {
-			.images {
-				@include flex(center, center, row);
+    &-text {
+      h1 {
+        font-size: 10.3vw;
+      }
+    }
+  }
+  .tasks {
+    .task {
+      .images {
+        @include flex(center, center, row);
 
-				img:first-child {
-					height: 300px;
-				}
-			}
+        img:first-child {
+          height: 300px;
+        }
+      }
 
-			&-text {
-				h2 {
-					text-align: center;
-				}
+      &-text {
+        h2 {
+          text-align: center;
+        }
 
-				&-items {
-					.item:not(.activeItem) {
-						display: none;
-					}
-				}
-			}
-		}
-	}
+        &-items {
+          .item:not(.activeItem) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 
-	.inspration-cards {
-		@include flex(center, center, column);
-		.card {
-			min-width: 100%;
-		}
-	}
+  .inspration-cards {
+    @include flex(center, center, column);
+    .card {
+      min-width: 100%;
+    }
+  }
 }
 
 @media (max-width: 470px) {
-	.power {
-		h2 {
-			text-align: center;
-		}
+  .power {
+    h2 {
+      text-align: center;
+    }
 
-		&-form {
-			@include flex(center, center, row);
+    &-form {
+      @include flex(center, center, row);
 
-			input[type="email"] {
-				width: 50%;
-			}
-		}
-	}
+      input[type="email"] {
+        width: 50%;
+      }
+    }
+  }
 }

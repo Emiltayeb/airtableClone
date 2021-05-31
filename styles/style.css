@@ -854,6 +854,12 @@ footer .footer-links-container .bottom {
   }
 }
 
+@media (min-width: 605px) {
+  body {
+    overflow: scroll !important;
+  }
+}
+
 @media (max-width: 605px) {
   .intro-text p {
     font-size: 1rem;
