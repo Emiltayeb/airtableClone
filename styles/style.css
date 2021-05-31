@@ -268,7 +268,7 @@ a.link-secondary:hover {
 }
 
 .intro-form input[type="email"] {
-  margin-right: 1.2rem;
+  margin: 1rem 1rem 1rem 0;
 }
 
 .intro-form-helper {
@@ -864,9 +864,6 @@ footer .footer-links-container .bottom {
   .intro-text p {
     font-size: 1rem;
   }
-  .intro-form input[type="email"] {
-    width: 50%;
-  }
   #navbar {
     padding: 0 1rem;
   }
@@ -990,9 +987,6 @@ footer .footer-links-container .bottom {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-  .power-form input[type="email"] {
-    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */

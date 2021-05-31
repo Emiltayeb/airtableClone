@@ -191,9 +191,7 @@
   .intro-text p {
     font-size: 1rem;
   }
-  .intro-form input[type="email"] {
-    width: 50%;
-  }
+
   #navbar {
     padding: 0 1rem;
     ul {
@@ -285,10 +283,9 @@
 
     &-form {
       @include flex(center, center, row);
-
-      input[type="email"] {
-        width: 50%;
-      }
     }
   }
+}
+
+@media (max-width: 350px) {
 }
